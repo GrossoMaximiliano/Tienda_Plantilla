@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carrousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./frameworks/flexboxgrid.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css"/>
+  </head>
+  <body>
+    <header>
+        <nav class="nav">
+            <div class="content">
+                <div class="botones showonphone">
+                        <button onclick="changeStateButton('navbar_isopen', 'check')" class="carrito"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <img src="./images/logo.png" alt="logo negocio">
+
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar producto..."/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="botones">
+                    <button class="moneda hideonphone">USD</button>
+                    <button class="carrito">0 USD <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <input type="checkbox" id="navbar_isopen" style="display: none;" checked>
+        <nav class="navphone">
+            <div class="content">
+                <img src="./images/logo.png" alt="logo negocio">
+                
+                <label for="navbar_isopen" class="menuicon"> <i class="fa-solid fa-xmark" id="closeicon"></i> </label>
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar producto..."/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </div>
+                
+                <hr>
+                
+                <div class="botones">
+                    <button class="moneda ">USD</button>
+                </div>
+
+                <hr>
+
+
+                <div class="listahrefs">
+                    <a href="">TIENDA</a>
+                    <a href="">> Streaming</a>
+                    <a href="">> Juegos</a>
+                    <a href="">> TIENDA</a>
+                    <a href="">> TIENDA</a>
+                    <a href="">> TIENDA</a>
+                    <a href="">CONTACTO</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="subnav hideonphone">
+            <div class="contenido">
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">CONTACTO</a>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <article class="content">
+            <div class="product_information">
+                <div class="product_information_image">
+                    <img src="https://dixgamer.com/wp-content/uploads/2022/03/back-4-blood-ps5-330x404.jpg" alt="Back 4 blood">
+                </div>
+                <div class="product_information_body">
+                    <div class="pib_header">
+                        <div class="pib_routes">
+                            <a href="#">INICIO</a>
+                            <a href="#">SHOP</a>
+                            <a href="#">JUEGOS</a>
+                            <a href="#">PS5</a>
+                        </div>
+                        <h1 class="pib_titulo">Back 4 Blood PS5 <span>digital</span></h1>
+                        <p class="pib_precio" >9.070 <span class="moneda">ARS</span></p>
+                    </div>
+
+                    <div class="pib_descripcion">
+                        <p>En este emocionante shooter en primera persona, los jugadores estarán en el centro de una guerra contra los Ridden, criaturas que alguna vez fueron humanos pero se han convertido en monstruos aterradores y hambrientos. Con la extinción de la humanidad en peligro, será un verdadero desafío erradicar a los Ridden y recuperar el mundo.</p>
+                        
+                        <div class="pib_descripcion_tipos"  >
+                            <div class="pib_descripcion_tipo">
+                                <input type="radio" name="tipo" id="primario">
+                                <div class="pib_descripcion_tipo_info">
+                                    <h1 class="titulo">Primario</h1>
+                                    <h2 class="precio">8.038 ARS</h2>
+                                    <p class="desc">Jugar desde tu cuenta de siempre.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="pib_descripcion_tipo">
+                                <input type="radio" name="tipo" id="secundario">
+                                <div class="pib_descripcion_tipo_info">
+                                    <h1 class="titulo">Secundario</h1>
+                                    <h2 class="precio">5.038 ARS</h2>
+                                    <p class="desc">Jugar desde una cuenta nueva.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div class="section">
+            <h1>NOSOTROS</h1>
+            <hr>
+            <p>Tienda de tarjetas de saldo y juegos digitales para PS3, PS4 y PS5 con excelente servicio al cliente. Precios bajos y gran variedad de productos disponibles.</p>
+        </div>
+        <div class="section">
+            <h1>REDES</h1>
+            <hr>
+            <p>Siguenos en nuestras redes sociales para enterarte sobre ofertas, productos y mas!</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsappicon" href="#">
+        <img src="./images/whatsapp_icon.png" alt="whatsapp">
+    </a>
+    <script src="./js/customFunctions.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
+    <script src="./js/carrousel.js"></script>
+
+  </body>
+</html>

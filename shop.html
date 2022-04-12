@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./frameworks/flexboxgrid.min.css">
+    <link rel="stylesheet" href="./css/shopSlider.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    
+  </head>
+  <body>
+    <header>
+        <nav class="nav">
+            <div class="content">
+                <div class="botones showonphone">
+                        <button onclick="changeStateButton('navbar_isopen', 'check')" class="carrito"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <img src="./images/logo.png" alt="logo negocio">
+
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar producto..."/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="botones">
+                    <button class="moneda hideonphone">USD</button>
+                    <button class="carrito">0 USD <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <input type="checkbox" id="navbar_isopen" style="display: none;" checked>
+        <nav class="navphone">
+            <div class="content">
+                <img src="./images/logo.png" alt="logo negocio">
+                
+                <label for="navbar_isopen" class="menuicon"> <i class="fa-solid fa-xmark" id="closeicon"></i> </label>
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar producto..."/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </div>
+                
+                <hr>
+                
+                <div class="botones">
+                    <button class="moneda ">USD</button>
+                </div>
+
+                <hr>
+
+
+                <div class="listahrefs">
+                    <a href="">TIENDA</a>
+                    <a href="">> Streaming</a>
+                    <a href="">> Juegos</a>
+                    <a href="">> TIENDA</a>
+                    <a href="">> TIENDA</a>
+                    <a href="">> TIENDA</a>
+                    <a href="">CONTACTO</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="subnav hideonphone">
+            <div class="contenido">
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">TIENDA</a>
+                <a href="">CONTACTO</a>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <article class="content">
+            <article class="shopheader">
+                <section class="route">
+                    <p>INICIO</p>
+                    <a href="">SHOP</a>
+                    <a href="">PRUEBA</a>
+                </section>
+
+                <section class="informacion_order">
+                    <span>Mostrando 1 – 36 de 39 resultados</span>
+                    <select>
+                      <option value="0">Orden alfabético</option>
+                      <option value="1">Orden por Ultimos</option>
+                      <option value="2">Ordenar por precio: bajo a alto</option>
+                      <option value="2">Ordenar por precio: alto a bajo</option>
+                    </select>
+                </section>
+            </article>
+
+            <article class="shop_body">
+                <nav class="shop_filter">
+                    <div class="buscador">
+                        <input type="text" placeholder="Buscar productos..."/>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <h4 class="categoria_tittle">BUSCAR POR CATEGORÍA</h4>
+                    <section class="categorias">
+                        <article class="categoria">
+                            <p class="titulo">Juegos</p>
+                            <div class="right_data">
+                                <span>(900)</span>
+                                <i class="fa-solid fa-angle-down"></i>
+
+                            </div>
+                        </article>
+                        <article class="categoria">
+                            <p class="titulo">Streaming</p>
+                            <div class="right_data">
+                                <span>(2900)</span>
+                                <i class="fa-solid fa-angle-down"></i>
+
+                            </div>
+                        </article>
+                    </section>
+
+                    <h4 class="categoria_tittle">FILTRAR POR PRECIO</h4>
+
+                    <section class="filterByPrice">
+                        <div class="slider">
+                            <div class="slider-track"></div>
+                            <input type="range" min="0" max="10000" value="10" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="0" max="10000" value="10000" id="slider-2" oninput="slideTwo()">
+                        </div>
+
+                        <div class="right_data">
+                            <button href="">FILTRAR</button>
+                            <p>Precio: <strong><span id="range1"></span> USD —<br><span id="range2"></span> USD</strong></p>
+                        </div>
+
+                    </section>
+
+                </nav>
+                <section class="shop_products">
+                    <!--<p class="shop_desc">Tarjetas de carga o para regalo. Cartera virtual. Gift Card.</p>-->
+                    <article class="products">
+                        <article class="product">
+                            <div class="product__header">
+                                <img src="https://dixgamer.com/wp-content/uploads/2018/06/1000-pavos-247x309.jpg" alt="">
+                            </div>
+                            <div class="product__description">
+                                <h1 class="referente">FORNITE</h1>
+                                <p class="titulo">1000 paVos Fortnite</p>
+                                <p class="precio">1.102 USD</p>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <div class="product__header">
+                                <img src="https://dixgamer.com/wp-content/uploads/2018/06/1000-pavos-247x309.jpg" alt="">
+                            </div>
+                            <div class="product__description">
+                                <h1 class="referente">FORNITE</h1>
+                                <p class="titulo">1000 paVos Fortnite</p>
+                                <p class="precio">1.102 USD</p>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <div class="product__header">
+                                <img src="https://dixgamer.com/wp-content/uploads/2018/06/1000-pavos-247x309.jpg" alt="">
+                            </div>
+                            <div class="product__description">
+                                <h1 class="referente">FORNITE</h1>
+                                <p class="titulo">1000 paVos Fortnite</p>
+                                <p class="precio">1.102 USD</p>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <div class="product__header">
+                                <img src="https://dixgamer.com/wp-content/uploads/2018/06/1000-pavos-247x309.jpg" alt="">
+                            </div>
+                            <div class="product__description">
+                                <h1 class="referente">FORNITE</h1>
+                                <p class="titulo">1000 paVos Fortnite</p>
+                                <p class="precio">1.102 USD</p>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <div class="product__header">
+                                <img src="https://dixgamer.com/wp-content/uploads/2018/06/1000-pavos-247x309.jpg" alt="">
+                            </div>
+                            <div class="product__description">
+                                <h1 class="referente">FORNITE</h1>
+                                <p class="titulo">1000 paVos Fortnite</p>
+                                <p class="precio">1.102 USD</p>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <div class="product__header">
+                                <img src="https://dixgamer.com/wp-content/uploads/2018/06/1000-pavos-247x309.jpg" alt="">
+                            </div>
+                            <div class="product__description">
+                                <h1 class="referente">FORNITE</h1>
+                                <p class="titulo">1000 paVos Fortnite</p>
+                                <p class="precio">1.102 USD</p>
+                            </div>
+                        </article>
+
+                    </article>
+
+                    <article class="paginator">
+                        <span class="paginator__button active">1</span>
+                        <span class="paginator__button">2</span>
+                        <span class="paginator__button">3</span>
+                        <span class="paginator__button">4</span>
+                        <span class="paginator__button">...</span>
+                        <span class="paginator__button">10</span>
+                        <span class="paginator__button">11</span>
+                        <span class="paginator__button">12</span>
+                        <span class="paginator__button">></span>
+                    </article>
+                </section>
+            </article>
+        </article>
+    </section>
+
+    <footer>
+        <div class="section">
+            <h1>NOSOTROS</h1>
+            <hr>
+            <p>Tienda de tarjetas de saldo y juegos digitales para PS3, PS4 y PS5 con excelente servicio al cliente. Precios bajos y gran variedad de productos disponibles.</p>
+        </div>
+        <div class="section">
+            <h1>REDES</h1>
+            <hr>
+            <p>Siguenos en nuestras redes sociales para enterarte sobre ofertas, productos y mas!</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsappicon" href="#">
+        <img src="./images/whatsapp_icon.png" alt="whatsapp">
+    </a>
+    <script src="./js/customFunctions.js"></script>
+
+    <script src="./js/shopSlider.js"></script>
+  </body>
+</html>
